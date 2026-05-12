@@ -21,7 +21,7 @@ const Skills = () => {
     }, {});
 
     return (
-        <section id="skills" className='relative w-full flex flex-col bg-slate-950 text-white overflow-hidden py-16 px-4 md:px-12'>
+        <section id="skills" className='relative w-full flex flex-col bg-slate-950 text-white overflow-hidden py-16 px-3 sm:px-4 md:px-12'>
             {/* Background Decorative Elements */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-40">
                 <div className="absolute top-[20%] right-[-10%] w-[40%] h-[40%] bg-blue-900/20 rounded-full blur-[140px]"></div>
@@ -56,7 +56,7 @@ const Skills = () => {
                                 skills.length >= 8 ? 'md:col-span-12' : 
                                 skills.length >= 4 ? 'md:col-span-6' : 
                                 'md:col-span-4'
-                            } p-6 md:p-8 rounded-[2.5rem] bg-slate-900/40 border border-slate-800 backdrop-blur-xl shadow-2xl space-y-6 group hover:border-cyan-500/30 transition-all duration-500`}
+                            } p-4 sm:p-6 md:p-8 rounded-[2rem] sm:rounded-[2.5rem] bg-slate-900/40 border border-slate-800 backdrop-blur-xl shadow-2xl space-y-4 md:space-y-6 group hover:border-cyan-500/30 transition-all duration-500`}
                         >
                             <div className="flex items-center justify-between border-b border-white/5 pb-4">
                                 <h3 className="text-xl md:text-2xl font-black text-cyan-400 uppercase tracking-tight">{domain}</h3>

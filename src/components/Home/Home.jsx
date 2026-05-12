@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Home.css"
 import assets from '../../assets/assets';
 
 const Home = () => {
+    const [isOtherOpen, setIsOtherOpen] = useState(false);
     return (
         <section id="home" className='relative min-h-screen w-full flex flex-col bg-slate-950 text-white overflow-x-hidden'>
             {/* Isolated Background Container to prevent horizontal overflow without breaking sticky items */}
@@ -35,18 +36,25 @@ const Home = () => {
                         </a>
 
                         {/* Dropdown for 'Other' */}
-                        <div className="relative group/other">
-                            <button className='flex items-center gap-1 text-xs sm:text-sm md:text-base font-bold text-gray-400 hover:text-cyan-400 transition-all cursor-pointer'>
+                        <div 
+                            className="relative group/other"
+                            onMouseEnter={() => setIsOtherOpen(true)}
+                            onMouseLeave={() => setIsOtherOpen(false)}
+                        >
+                            <button 
+                                onClick={() => setIsOtherOpen(!isOtherOpen)}
+                                className='flex items-center gap-1 text-xs sm:text-sm md:text-base font-bold text-gray-400 hover:text-cyan-400 transition-all cursor-pointer'
+                            >
                                 Other
-                                <svg className="w-3 h-3 transition-transform group-hover/other:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className={`w-3 h-3 transition-transform ${isOtherOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
 
-                            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/other:opacity-100 group-hover/other:visible transition-all duration-300">
+                            <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ${isOtherOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
                                 <div className="bg-slate-900/90 backdrop-blur-2xl border border-white/10 rounded-2xl p-2 shadow-2xl min-w-[140px]">
-                                    <a href='#research' className='block px-4 py-2.5 text-sm font-bold text-gray-400 hover:text-cyan-400 hover:bg-white/5 rounded-xl transition-all'>Research</a>
-                                    <a href='#gallery' className='block px-4 py-2.5 text-sm font-bold text-gray-400 hover:text-cyan-400 hover:bg-white/5 rounded-xl transition-all'>Gallery</a>
+                                    <a href='#research' onClick={() => setIsOtherOpen(false)} className='block px-4 py-2.5 text-sm font-bold text-gray-400 hover:text-cyan-400 hover:bg-white/5 rounded-xl transition-all'>Research</a>
+                                    <a href='#gallery' onClick={() => setIsOtherOpen(false)} className='block px-4 py-2.5 text-sm font-bold text-gray-400 hover:text-cyan-400 hover:bg-white/5 rounded-xl transition-all'>Gallery</a>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +63,10 @@ const Home = () => {
             </header>
 
             {/* Main Content - Bento Grid Layout */}
-            <main className="relative z-10 flex-grow grid grid-cols-1 md:grid-cols-12 gap-6 px-4 md:px-12 py-8 max-w-7xl mx-auto w-full md:items-stretch items-center">
+            <main className="relative z-10 flex-grow grid grid-cols-1 md:grid-cols-12 gap-6 px-3 sm:px-4 md:px-12 py-8 max-w-7xl mx-auto w-full md:items-stretch items-center">
 
                 {/* Main Hero Card (Large) */}
-                <div className="md:col-span-8 flex flex-col justify-center p-8 md:p-10 rounded-[2rem] bg-slate-900/40 border border-slate-800 backdrop-blur-xl shadow-2xl space-y-4 md:space-y-6 items-center md:items-start text-center md:text-left">
+                <div className="md:col-span-8 flex flex-col justify-center p-5 sm:p-6 md:p-10 rounded-[1.5rem] sm:rounded-[2rem] bg-slate-900/40 border border-slate-800 backdrop-blur-xl shadow-2xl space-y-4 md:space-y-6 items-center md:items-start text-center md:text-left">
                     <div className="space-y-2 md:space-y-4">
 
                         <h2 className="text-2xl md:text-4xl font-bold text-slate-400 tracking-tight">Hey, I'm</h2>
@@ -88,7 +96,7 @@ const Home = () => {
                 </div>
 
                 {/* Profile Image Card */}
-                <div className="md:col-span-4 flex items-center justify-center p-4 rounded-[2rem] bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-slate-800/50 backdrop-blur-xl overflow-hidden group h-full">
+                <div className="md:col-span-4 flex items-center justify-center p-3 sm:p-4 rounded-[1.5rem] sm:rounded-[2rem] bg-gradient-to-br from-cyan-500/10 to-blue-600/10 border border-slate-800/50 backdrop-blur-xl overflow-hidden group h-full">
                     <div className="relative w-full h-full max-w-[300px] md:max-w-none rounded-3xl overflow-hidden border-2 border-white/5 group-hover:border-cyan-400/50 transition-colors shadow-2xl">
                         <img
                             src={assets.PP_Formal_bg}
@@ -100,7 +108,7 @@ const Home = () => {
                 </div>
 
                 {/* Social Bento Card */}
-                <div className="md:col-span-6 flex flex-wrap items-center justify-center gap-4 md:gap-5 p-6 md:p-8 rounded-[2rem] bg-slate-900/60 border border-slate-800 backdrop-blur-xl shadow-xl">
+                <div className="md:col-span-6 flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-5 p-4 sm:p-6 md:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-slate-900/60 border border-slate-800 backdrop-blur-xl shadow-xl">
                     {[
                         { url: 'https://github.com/Prashant0036', img: assets.github_logo },
                         { url: 'https://leetcode.com/u/prashant_saraswat/', img: assets.leetcode_logo },
@@ -123,7 +131,7 @@ const Home = () => {
                 </div>
 
                 {/* Tech Status Card */}
-                <div className="md:col-span-6 flex flex-col justify-center p-8 rounded-[2rem] bg-cyan-900/10 border border-cyan-500/20 backdrop-blur-xl shadow-inner">
+                <div className="md:col-span-6 flex flex-col justify-center p-5 sm:p-6 md:p-8 rounded-[1.5rem] sm:rounded-[2rem] bg-cyan-900/10 border border-cyan-500/20 backdrop-blur-xl shadow-inner">
                     <div className="grid grid-cols-2 gap-4 text-center">
                         <div className="p-4 rounded-2xl bg-slate-950/40 border border-white/5">
                             <p className="text-2xl font-black text-white">15+</p>

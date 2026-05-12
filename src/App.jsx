@@ -42,7 +42,7 @@ const App = () => {
     <div>
       <ChatBot />
       <Home />
-      
+
       {/* Fallback while components are loading */}
       <Suspense fallback={<div className="h-screen flex items-center justify-center bg-slate-950 text-white font-bold">Loading...</div>}>
         <Skills />
@@ -51,6 +51,14 @@ const App = () => {
         <Certification />
         <Research />
         <Gallery />
+        <footer className="w-full bg-slate-950 py-8 border-t border-white/5 text-center relative z-10">
+          <p className="text-slate-500 text-sm font-medium">
+            &copy; {new Date().getFullYear()} Prashant Saraswat. All rights reserved.
+          </p>
+          <p className="text-slate-600 text-xs mt-2">
+            Built with 🩵 by Prashant Saraswat
+          </p>
+        </footer>
       </Suspense>
     </div>
   );
