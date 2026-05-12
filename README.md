@@ -1,6 +1,6 @@
 # Prashant Saraswat - Personal Portfolio
 
-![Portfolio Preview](./src/assets/my_gallery/src/assets/my_gallery/WhatsApp Image 2026-05-11 at 10.52.59 PM.webp) <!-- Using one of the gallery images as a placeholder for preview if needed, or just let it fail gracefully -->
+![Portfolio Preview](./src/assets/my_gallery/WhatsApp%20Image%202026-05-11%20at%2010.52.59%20PM.webp)
 
 A premium, high-performance developer portfolio featuring a modern bento-grid layout. Built to showcase full-stack projects, academic research, patents, professional experience, and technical certifications.
 
