@@ -33,7 +33,7 @@ const Home = () => {
                             <span className="sm:hidden">Certs</span>
                             <span className="hidden sm:inline">Certifications</span>
                         </a>
-                        
+
                         {/* Dropdown for 'Other' */}
                         <div className="relative group/other">
                             <button className='flex items-center gap-1 text-xs sm:text-sm md:text-base font-bold text-gray-400 hover:text-cyan-400 transition-all cursor-pointer'>
@@ -42,7 +42,7 @@ const Home = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
                                 </svg>
                             </button>
-                            
+
                             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover/other:opacity-100 group-hover/other:visible transition-all duration-300">
                                 <div className="bg-slate-900/90 backdrop-blur-2xl border border-white/10 rounded-2xl p-2 shadow-2xl min-w-[140px]">
                                     <a href='#research' className='block px-4 py-2.5 text-sm font-bold text-gray-400 hover:text-cyan-400 hover:bg-white/5 rounded-xl transition-all'>Research</a>
@@ -134,7 +134,7 @@ const Home = () => {
                             <p className="text-xs font-bold text-slate-400 uppercase tracking-tighter">to Collaborate</p>
                         </div>
                         <div className="col-span-2 p-4 rounded-2xl bg-slate-950/40 border border-white/5">
-                            <p className="text-lg font-black text-cyan-400 italic">"Wait..., Let me solve it through coding"</p>
+                            <p className="text-lg font-black text-cyan-400 italic">" Wait..., Let me solve it through coding "</p>
                         </div>
                     </div>
                 </div>

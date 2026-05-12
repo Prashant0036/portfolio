@@ -2,7 +2,7 @@ import React from 'react';
 
 const Gallery = () => {
     // Import all images from the my_gallery folder dynamically using Vite
-    const images = import.meta.glob('../../assets/my_gallery/*.{png,jpg,jpeg,svg}', { eager: true });
+    const images = import.meta.glob('../../assets/my_gallery/*.{webp,png,jpg,jpeg,svg}', { eager: true });
     
     // Convert the glob object into an array of image URLs
     const imageList = Object.values(images).map((module) => module.default);

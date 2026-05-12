@@ -1,70 +1,69 @@
-import aws from "./aws.png";
-import C_Logo from "./C_Logo.png";
-import Cpp_Logo from "./Cpp_Logo.png";
+import aws from "./aws.webp";
+import C_Logo from "./C_Logo.webp";
+import Cpp_Logo from "./Cpp_Logo.webp";
 import canva from "./canva.webp";
-import CSS from "./CSS.png";
-import expressjs from "./expressjs.png";
-import figma from "./figma.png";
-import gfg from "./gfg.avif";
-import Git from "./Git.png";
-import github_logo from "./github_logo.png";
+import CSS from "./CSS.webp";
+import expressjs from "./expressjs.webp";
+import figma from "./figma.webp";
+import gfg from "./gfg.webp";
+import Git from "./Git.webp";
+import github_logo from "./github_logo.webp";
 import gmail from "./gmail.webp";
-import Hckrnk from "./Hckrnk.png";
-import HTML from "./HTML.png";
+import Hckrnk from "./Hckrnk.webp";
+import HTML from "./HTML.webp";
 import instagramPng from "./instagramPng.webp";
-import java from "./java.png";
+import java from "./java.webp";
 import Javascript from "./Javascript.webp";
 import leetcode_logo from "./leetcode_logo.webp";
-import linkedIn_logo from "./linkedIn_logo.webp";
-import linkedInLogo from "./linkedInLogo.gif";
-import Matlab from "./Matlab.png";
+import linkedIn_logo from "./LinkedIn_logo_initials.png";
+import Matlab from "./Matlab.webp";
 import Matplotlib_logo from "./Matplotlib.webp";
 import mongodb from "./mongodb.webp";
-import monkey1 from "./monkey1.gif";
-import monkey2 from "./monkey2.gif";
-import network from "./network.png";
-import nodejs from "./nodejs.png";
-import numpy from "./numpy.png";
-import pandas_logo from "./pandas-logo.png";
-import PHP from "./PHP.png";
+import monkey1 from "./monkey1.webp";
+import monkey2 from "./monkey2.webp";
+import network from "./network.webp";
+import nodejs from "./nodejs.webp";
+import numpy from "./numpy.webp";
+import pandas_logo from "./pandas-logo.webp";
+import PHP from "./PHP.webp";
 import postman from "./postman.webp";
-import Power_BI from "./Power_BI.png";
-import PP_Formal_bg from "./PP_Formal_bg.png";
-import python from "./python.png";
-import react from "./react.svg";
-import React_icon from "./React-icon.png";
+import Power_BI from "./Power_BI.webp";
+import PP_Formal_bg from "./PP_Formal_bg.webp";
+import python from "./python.webp";
+import react from "./react.webp";
+import React_icon from "./React-icon.webp";
 import rest_api from "./rest-api.webp";
-import sklearn from "./sklearn.png";
-import skl from "./skl.png"
-import sql_logo from "./sql-logo.png";
-import wordpress from "./wordpress.png";
-import tailwind from "./Tailwind.png";
-import deleteSVG from "./delete-svg.svg";
-import whatsapp from "./whatsapp.png";
-import x_icon from "./x_icon.png";
-import nextjs from "./nextjs.png";
-import redis from "./redis.png";
-import docker from "./docker.png";
-import kubernetes from "./kubernetes.png";
-import AdmarkDigital from "./AdmarkDigital.png";
-import AppleTreeInfotech from "./AppleTreeInfotech.png";
-import BhagwatiGenerator from "./BG-power-final-logo.svg";
-import CaderaAbroad from "./CaderaAbroad.png";
-import CaderaEdu from "./CaderaEdu.png";
-import Krayonnz from "./Krayonnz.png";
+import sklearn from "./sklearn.webp";
+import skl from "./skl.webp";
+import sql_logo from "./sql-logo.webp";
+import wordpress from "./wordpress.webp";
+import tailwind from "./Tailwind.webp";
+import deleteSVG from "./delete-svg.webp";
+import whatsapp from "./whatsapp.webp";
+import x_icon from "./x_icon.webp";
+import nextjs from "./nextjs.webp";
+import redis from "./redis.webp";
+import docker from "./docker.webp";
+import kubernetes from "./kubernetes.webp";
+import AdmarkDigital from "./AdmarkDigital.webp";
+import AppleTreeInfotech from "./AppleTreeInfotech.webp";
+import BhagwatiGenerator from "./BG-power-final-logo.webp";
+import CaderaAbroad from "./CaderaAbroad.webp";
+import CaderaEdu from "./CaderaEdu.webp";
+import Krayonnz from "./Krayonnz.webp";
 
 
 // Projects
-import logicleet from "./Projects/logicleet.png";
-import linkIcon from "./link-icon.png"
-import faceRecognition from "./Projects/faceRecognition.png";
-import homePricePrediction from "./Projects/homePricePrediction.png";
-import Netflix from "./Projects/Netflix.png";
-import secretImageShare from "./Projects/secretImageShare.png";
-import spotifyClone from "./Projects/spotifyClone.png";
-import steganography from "./Projects/steganography.png";
-import tbApp from "./Projects/tbApp.png";
-import internetSpeed from "./Projects/internetSpeed.png";
+import logicleet from "./Projects/logicleet.webp";
+import linkIcon from "./link-icon.webp";
+import faceRecognition from "./Projects/faceRecognition.webp";
+import homePricePrediction from "./Projects/homePricePrediction.webp";
+import Netflix from "./Projects/Netflix.webp";
+import secretImageShare from "./Projects/secretImageShare.webp";
+import spotifyClone from "./Projects/spotifyClone.webp";
+import steganography from "./Projects/steganography.webp";
+import tbApp from "./Projects/tbApp.webp";
+import internetSpeed from "./Projects/internetSpeed.webp";
 
 
 // Certificates
@@ -95,7 +94,6 @@ const assets = {
     Javascript,
     leetcode_logo,
     linkedIn_logo,
-    linkedInLogo,
     Matlab,
     Matplotlib_logo,
     mongodb,
