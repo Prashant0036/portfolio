@@ -1,12 +1,67 @@
-# React + Vite
+# Prashant Saraswat - Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./src/assets/my_gallery/10.webp) <!-- Using one of the gallery images as a placeholder for preview if needed, or just let it fail gracefully -->
 
-Currently, two official plugins are available:
+A premium, high-performance developer portfolio featuring a modern bento-grid layout. Built to showcase full-stack projects, academic research, patents, professional experience, and technical certifications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🌐 Live Portfolio
+**[prashantsaraswat.netlify.app](https://prashantsaraswat.netlify.app/)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Modern Bento-Grid UI**: Sleek, glassmorphism design with responsive grid layouts.
+- **Ultra-Smooth Scrolling**: Integrated with `Lenis` for premium inertia-based scrolling.
+- **Lightning Fast**: Built with Vite and React, utilizing `React.lazy` code-splitting and fully optimized `.webp` imagery for instant load times.
+- **Interactive Sections**: 
+  - 🛠️ **Skills**: Categorized technical proficiencies.
+  - 💼 **Experience**: Professional timeline and brand showcase.
+  - 🚀 **Projects**: Detailed showcase of full-stack applications.
+  - 📜 **Certifications**: Verified industry milestones.
+  - 🔬 **Research & Patents**: Dedicated section for academic publications with Paper IDs.
+  - 📸 **Gallery**: Masonry layout for visual milestones.
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: [React](https://reactjs.org/) (Functional Components, Hooks)
+- **Build Tool**: [Vite](https://vitejs.dev/) (Extremely fast HMR and optimized builds)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Scroll Interactions**: [Lenis Smooth Scroll](https://lenis.studiofreight.com/)
+- **Deployment**: [Netlify](https://www.netlify.com/)
+
+---
+
+## 💻 Running Locally
+
+To run this project on your local machine, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Prashant0036/portfolio.git
+   ```
+
+2. **Navigate to the directory:**
+   ```bash
+   cd portfolio
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+5. Open `http://localhost:5173` in your browser.
+
+---
+
+## 📬 Contact
+
+- **LinkedIn**: [prashantsaraswat036](https://www.linkedin.com/in/prashantsaraswat036/)
+- **GitHub**: [@Prashant0036](https://github.com/Prashant0036)
+- **Portfolio**: [https://prashantsaraswat.netlify.app/](https://prashantsaraswat.netlify.app/)
